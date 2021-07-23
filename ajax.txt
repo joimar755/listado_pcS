@@ -1,0 +1,56 @@
+[
+  {
+    "id": "45",
+    "unidad": "EDBAR",
+    "dependencia": "ALMANCEN GENERAL",
+    "activo_fijo": "1344455667",
+    "num_inv": "467896",
+    "denominacion": "COMPUTADOR DE ESCRITORIO DELL 790 DTS",
+    "direccion_ip": "99.99.99.99",
+    "anyo_adqui": "2021-07-21",
+    "windowss": "windows7",
+    "responsable": "DANIEL",
+    "observacion": "pantalla dañada"
+  },
+  {
+    "id": "46",
+    "unidad": "EDBAR",
+    "dependencia": "DECANATURA",
+    "activo_fijo": "1344455675",
+    "num_inv": "416252",
+    "denominacion": "TODO EN UNO HP",
+    "direccion_ip": "222.222.222.222",
+    "anyo_adqui": "2021-07-21",
+    "windowss": "windows10",
+    "responsable": "JUAN",
+    "observacion": "sin novedad"
+  },
+  {
+    "id": "48",
+    "unidad": "EDBAR",
+    "dependencia": "ALMANCEN GENERAL",
+    "activo_fijo": "1344455667",
+    "num_inv": "467896",
+    "denominacion": "COMPUTADOR DE ESCRITORIO DELL 790 DTS",
+    "direccion_ip": "99.99.99.99",
+    "anyo_adqui": "2021-07-21",
+    "windowss": "windows7",
+    "responsable": "DANIEL",
+    "observacion": "pantalla dañada"
+  },
+  {
+    "id": "49",
+    "unidad": "EDBAR",
+    "dependencia": "DECANATURA",
+    "activo_fijo": "1344455675",
+    "num_inv": "416252",
+    "denominacion": "TODO EN UNO HP",
+    "direccion_ip": "222.222.222.222",
+    "anyo_adqui": "2021-07-21",
+    "windowss": "windows10",
+    "responsable": "JUAN",
+    "observacion": "sin novedad"
+  }
+] 
+
+ALEJANDRO: 3218311924
