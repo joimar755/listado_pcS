@@ -1,5 +1,5 @@
 $(document).ready(function () { 
-   
+   let editar = false;
 
     mostrarlista();
     $('#form_regi').submit(function(e) { 
@@ -15,10 +15,14 @@ $(document).ready(function () {
         anyo_adqui: $('#anyo_adqui').val(),
         windowss: $('#windowss').val(),
         responsable: $('#responsable').val(),
-        observacion: $('#observacion').val()
-       };
+        observacion: $('#observacion').val(),
+        id:$('#listID').val()
+       }; 
+     
+       let url = editar === false ? 'registro/insertar.php' : 'registro/edit.php'; 
+      
           
-       $.post('registro/insertar.php', inf, function (response){
+       $.post(url, inf, function (response){
         console.log(response); 
          
         mostrarlista(); 
@@ -120,7 +124,8 @@ $(document).ready(function () {
            $('#windowss').val(list.windowss);
            $('#responsable').val(list.responsable);
            $('#observacion').val(list.observacion);
-           $('#id').val(list.id);
+           $('#listID').val(list.id); 
+           editar=true;
      })
 
   });
