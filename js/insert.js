@@ -18,7 +18,7 @@ $(document).ready(function () {
         observacion: $('#observacion').val(),
         id:$('#listID').val()
        }; 
-     
+      
        let url = editar === false ? 'registro/insertar.php' : 'registro/edit.php'; 
       
           

@@ -68,15 +68,15 @@
 <body class="text-center">
     <div class="form-signin bg-light">
         <form id="form" method="POST">
-            <img class="mb-4" src="img/logo.ico" alt="" width="72">
+            <img class="mb-4" src="../img/logo.ico" alt="" width="72">
             <h1 class="h3 mb-3 fw-normal">PANEL DE EQUIPOS DE PC</h1>
 
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput"  placeholder="name@example.com" id="email"  required>
+                <input type="email" class="form-control"   placeholder="name@example.com" id="email"  required>
                 <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword"  placeholder="Password" id="pass" required>
+                <input type="password" class="form-control"   placeholder="Password" id="pass" required>
                 <label for="floatingPassword">Password</label>
             </div>
 
@@ -85,33 +85,64 @@
                     <input type="checkbox" value="remember-me"> Remember me
                 </label>
             </div>
-            <button class="w-100 btn btn-lg btn-dark" id="submit" type="submit">Sign in</button>
+            <button class="w-100 btn btn-lg btn-dark" id="submit" type="submit">Iniciar sesion</button> 
+            
             <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-        </form>
+        </form> 
+        <a><button class="w-100 btn btn-lg btn-dark " id="registro"  type="submit">Registrarse</button></a>
     </div> 
 
- 
+    <div class="text-center">
+    <div id="contenido"></div>
+    </div>
 
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
     </script>
-    <script src="js/jquery-3.6.0.js"></script> 
+    <script src="../js/jquery-3.6.0.js"></script> 
 </body>
 
 </html> 
 
 <script>
-    $(document).ready(function () {
+    $(document).ready(function () { 
+        
         $('#form').submit(function (e) { 
               const login ={
                   email:$('#email').val(),
                   passw:$('#pass').val()
               };
+
                 
                 console.log(login);
                 e.preventDefault();
+            }); 
+        
+            $('#registro').click(function (e) {  
+                 var tiempo = 2000;
+                  
+                 $.ajax({ 
+                     url:"registro.php",
+                     beforeSend : function () {
+                         $('#contenido').text('cargando.....');
+                     },
+                     success : function(data) {
+                         setTimeout(function() {
+                            $('#contenido').html(data);
+
+                         }, tiempo
+                         );
+                     }
+                     
+                 });
+
+
+
+                e.preventDefault();
+                
             });
     }); 
 </script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
