@@ -13,49 +13,52 @@
   <body>
       
       <h1 class="text-white mb-3">Registrarse</h1>
-      <form action="#">
+      <form id="form_regi" action="#">
           <div class="row mb-1">
               <div class="col">
                   <label class="form-label">First Name</label>
-                  <input type="text" name="firstName" class="form-control" placeholder="First name"
-                      aria-label="First name" required>
+                  <input type="text" name="nombre" class="form-control" id="nombre" placeholder="First name"
+                      aria-label="First name" >
               </div>
               <div class="col">
                   <label class="form-label">Last Name</label>
-                  <input type="text" name="lastName" class="form-control" placeholder="Last name"
-                      aria-label="Last name" required>
+                  <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Last name"
+                      aria-label="Last name" >
               </div>
           </div>
           <div class="row mb-1">
               <div class="col">
                   <label class="form-label">Email</label>
-                  <input type="email" name="email" class="form-control" placeholder="Email"
-                      aria-label="Email" required>
+                  <input type="email" name="email" class="form-control" id="email1"  placeholder="Email"
+                      aria-label="Email" >
               </div>
               <div class="col">
                   <label class="form-label">Phone (optional)</label>
-                  <input type="text" name="phone" class="form-control" placeholder="Phone"
+                  <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone"
                       aria-label="Phone">
               </div>
-          </div>
+          </div> 
+          
           <div class="row mb-1">
               <div class="col">
-                  <label class="form-label">Subject</label>
-                  <input type="text" name="subject" class="form-control" placeholder="Subject"
-                      aria-label="Subject" required>
+                <input type="password" class="form-control" name="passw" id="passw"  placeholder="Password"  >
+                <label class="form-label" for="floatingPassword">Password</label>
               </div>
-          </div>
-          <div class="row mb-1">
+           </div>
+           <div class="row mb-1">
               <div class="col">
-                  <label class="form-label">Message</label>
-                  <textarea type="text" name="message" class="form-control" placeholder="Message"
-                      aria-label="Message" required></textarea>
+                <input type="password" class="form-control" name="confirm_passw" id="confirm_passw" placeholder="Password"  >
+                <label class="form-label" for="floatingPassword">Password</label>
               </div>
-          </div>
-          <button type="submit" class="btn btn-primary mt-2">Submit</button>
+           </div>
+               
+          
+          <button type="submit" id="registro" class="btn btn-primary mt-2">Submit</button>
       </form>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-  </body>
+    <script src="../js/jshash-2.2/sha1.js"></script>
+    <script src="../js/registro.js"></script>  
+</body>
 </html>

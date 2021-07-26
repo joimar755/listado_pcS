@@ -115,13 +115,14 @@
                   passw:$('#pass').val()
               };
 
-                
+               
                 console.log(login);
                 e.preventDefault();
+                $('#form').trigger('reset');
             }); 
         
             $('#registro').click(function (e) {  
-                 var tiempo = 2000;
+                 var tiempo = 1000;
                   
                  $.ajax({ 
                      url:"registro.php",
@@ -145,4 +146,3 @@
             });
     }); 
 </script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
