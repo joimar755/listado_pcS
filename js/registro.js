@@ -3,21 +3,15 @@ $('#form_regi').submit(function (e) {
          nombre : $('#nombre').val(),
          apellido : $('#apellido').val(),
          email1 : $('#email1').val(),
-         phone : $('#phone').val()
-     } 
-     var passw = $('#passw').val();
-     var confirm_passw = $('#confirm_passw').val();
-
-     if(passw == confirm_passw){ 
-     alert('ok') 
-     }else{ 
-     alert('false')
-     };
+         phone : $('#phone').val(),
+         passw :$('#passw').val(),
+         confirm_passw : $('#confirm_passw').val()
+     }
+      
+      
      console.log(registrar);
-    
 
     $('#form_regi').trigger('reset');
     e.preventDefault();
-    
     
 });
