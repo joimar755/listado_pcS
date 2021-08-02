@@ -25,7 +25,7 @@
               '$dependencia', 
               '$activo_fijo',
               '$num_inv',
-              '$denominacion',
+              '$denominacion', 
               '$modelo',
               '$direccion_ip', 
               '$direc_ipv6',
@@ -49,6 +49,6 @@
    }
 
    
-    
+
 
 ?>
