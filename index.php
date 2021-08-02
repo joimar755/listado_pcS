@@ -2,8 +2,7 @@
  
  include ('conexion/conectar.php'); 
 
- $query = "SELECT * FROM info";
- $resultado = mysqli_query($con, $query);
+ 
  
 ?>
 <!doctype html> 
